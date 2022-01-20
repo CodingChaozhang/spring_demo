@@ -60,7 +60,7 @@ BIO即同步阻塞模式一请求一应答的通信模型，该模型最大的�
 
 **BIO通信模型图：**
 
-![image-20220118153215096](websocket_imgs\1.png)
+![image-20220118153215096](websocket_imgs/1.png)
 
 ### 2.2 伪异步IO通信（BIO优化版本）
 
@@ -79,7 +79,7 @@ BIO即同步阻塞模式一请求一应答的通信模型，该模型最大的�
 
 **伪异步IO通信模型图：**
 
-![image-20220118153406090](websocket_imgs\2.png)
+![image-20220118153406090](websocket_imgs/2.png)
 
 ### 2.3 NIO通信
 
@@ -160,11 +160,11 @@ AIO异步通道提供了两种方式获取操作结果：
 
 这种单向请求的特点，注定了如果服务器有连续的状态变化，客户端要获知就非常麻烦。大多数 Web 应用程序将通过频繁的异步JavaScript和XML（AJAX）请求实现长轮询。轮询的效率低，非常浪费资源（因为必须不停连接，或者 HTTP 连接始终打开）。
 
-![image-20220118154323421](websocket_imgs\3.png)
+![image-20220118154323421](websocket_imgs/3.png)
 
 因此，工程师们一直在思考，有没有更好的方法。WebSocket 就是这样发明的。WebSocket 连接允许客户端和服务器之间进行全双工通信，以便任一方都可以通过建立的连接将数据推送到另一端。WebSocket 只需要建立一次连接，就可以一直保持连接状态。这相比于轮询方式的不停建立连接显然效率要大大提高。
 
-![image-20220118154344201](websocket_imgs\4.png)
+![image-20220118154344201](websocket_imgs/4.png)
 
 
 **WebSocket建立连接步骤：**
@@ -206,7 +206,7 @@ AIO异步通道提供了两种方式获取操作结果：
 
 ### 4.1 依赖
 
-![image-20220118165635328](websocket_imgs\5.png)
+![image-20220118165635328](websocket_imgs/5.png)
 
 ### 4.2 接收/处理/响应 客户端websocket请求的核心业务处理类
 
@@ -447,6 +447,6 @@ public class Main {
 
 ### 4.4 展示
 
-![image-20220118165804167](websocket_imgs\6.png)
+![image-20220118165804167](websocket_imgs/6.png)
 
-![image-20220118165823145](websocket_imgs\7.png)
+![image-20220118165823145](websocket_imgs/7.png)
