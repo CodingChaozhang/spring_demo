@@ -8,29 +8,29 @@ RPC是远程过程调用（Remote Procedure Call）的缩写形式。
 
 假设我们有两台服务器A与B，一个在A服务器上部署的应用想要调用B服务器上部署的应用的函数、方法，由于不在同一个内存空间，不能直接调用，因此需要通过网络来表达调用的语义和传达调用的数据。  **在Java中，即将被调用的类、方法、参数序列化后通过网络传到目标应用，通过反射的方式调用执行**。
 
-![image-20220119194430211](rpc_imple\1.png)
+![image-20220119194430211](./rpc_imple/1.png)
 
 ### 2.数据交换方式
 
 利用中间件进行数据交换。
 
-![image-20220119194638487](rpc_imple\2.png)
+![image-20220119194638487](./rpc_imple/2.png)
 
 直接进行数据交换。 
 
-![image-20220119194657949](rpc_imple\3.png)
+![image-20220119194657949](./rpc_imple/3.png)
 
 ### 3.现有RPC框架对比
 
 目前主流的RPC框架如下表所示：
 
-![image-20220119194849722](rpc_imple\4.png)
+![image-20220119194849722](./rpc_imple/4.png)
 
 ### 4.核心原理
 
 #### 4.1 调用流程
 
-![image-20220119195347236](rpc_imple\5.png)
+![image-20220119195347236](./rpc_imple/5.png)
 
 - Server: Provider，服务提供者
 - Client: Consumer，服务消费者
@@ -57,7 +57,7 @@ my-rpc
 
 模块依赖关系如下图所示，my-rpc-server和my-rpc-client依赖关系相同。
 
-![image-20220119195903553](rpc_imple\6.png)
+![image-20220119195903553](./rpc_imple/6.png)
 
 #### 4.3 各功能模块功能详细介绍
 
@@ -115,7 +115,7 @@ my-rpc
 
 ### 1.类依赖图
 
-![image-20220119201002640](rpc_imple\7.png)
+![image-20220119201002640](./rpc_imple/7.png)
 
 ### 2.实现过程
 
@@ -225,6 +225,6 @@ rpc-client: 客户端封装
 
 **结果展示图：**
 
-![image-20220120135846650](rpc_imple\8.png)
+![image-20220120135846650](./rpc_imple/8.png)
 
-![image-20220120135904346](rpc_imple\9.png)
+![image-20220120135904346](./rpc_imple/9.png)
