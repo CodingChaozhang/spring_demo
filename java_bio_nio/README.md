@@ -20,9 +20,9 @@
 
 ### 2.BIO网络模型
 
-![image-20220117210340146](netty_imgs\1.png)
+![image-20220117210340146](netty_imgs/1.png)
 
-![image-20220117210445617](netty_imgs\2.png)
+![image-20220117210445617](netty_imgs/2.png)
 
 - **阻塞式 I/O 模型**
   - 如果客户端没有发起请求，服务的会一直存在并等待连接
@@ -34,7 +34,7 @@
 
 ### 3.NIO网络模型
 
-![image-20220117210645413](netty_imgs\3.png)
+![image-20220117210645413](netty_imgs/3.png)
 
 - **非阻塞 IO 模型**
   - 服务器端提供一个单线程的 selector 来统一管理所有客户端接入的连接
@@ -48,7 +48,7 @@
 
 ## 二、BIO下的TCP编程通信
 
-![image-20220117210918743](netty_imgs\4.png)
+![image-20220117210918743](netty_imgs/4.png)
 
 ### 1.服务器端server
 
@@ -303,7 +303,7 @@ SocketChannel socketChannel = SocketChannel.open(
 ByteBuffer.allocate(10);
 ```
 
-[![buffer的allocate方法](netty_imgs\5.png)
+[![buffer的allocate方法](netty_imgs/5.png)
 
 ```java
 /*
@@ -312,7 +312,7 @@ ByteBuffer.allocate(10);
 ByteBuffer.put("abc".getBytes(Charset.forName("UTF-8")));
 ```
 
-[![buffer的put方法](netty_imgs\6.png)
+[![buffer的put方法](netty_imgs/6.png)
 
 ```java
 /*
@@ -321,7 +321,7 @@ ByteBuffer.put("abc".getBytes(Charset.forName("UTF-8")));
 ByteBuffer.flip();
 ```
 
-[![buffer的flip方法](netty_imgs\7.png)
+[![buffer的flip方法](netty_imgs/7.png)
 
 ```java
 /*
@@ -330,7 +330,7 @@ ByteBuffer.flip();
 ByteBuffer.get();
 ```
 
-[![buffer的get方法](netty_imgs\8.png)
+[![buffer的get方法](netty_imgs/8.png)
 
 ```java
 /*
@@ -339,7 +339,7 @@ ByteBuffer.get();
 ByteBuffer.mark();
 ```
 
-[![buffer的mark方法](netty_imgs\9.png)
+[![buffer的mark方法](netty_imgs/9.png)
 
 ```java
 /*
@@ -350,7 +350,7 @@ ByteBuffer.get();
 ByteBuffer.reset();
 ```
 
-![image-20220117214320082](netty_imgs\10.png)
+![image-20220117214320082](netty_imgs/10.png)
 
 ```java
 /*
@@ -359,7 +359,7 @@ ByteBuffer.reset();
 ByteBuffer.clear();
 ```
 
-![image-20220117214305575](netty_imgs\11.png)
+![image-20220117214305575](netty_imgs/11.png)
 
 #### 1.3 Selector
 
