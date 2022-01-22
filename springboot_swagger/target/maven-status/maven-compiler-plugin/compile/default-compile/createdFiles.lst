@@ -1,0 +1,4 @@
+com\lcz\springboot_swagger\configuration\Swagger2UiConfiguration.class
+com\lcz\springboot_swagger\controller\Swagger2RestController.class
+com\lcz\springboot_swagger\model\Student.class
+com\lcz\springboot_swagger\SpringbootSwaggerApplication.class
